@@ -3,81 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Membuat Table</title>
+    <title>Membuat Tabel</title>
 </head>
 <body>
-    <h1>Membuat Table</h1>
-    <hr>
-    <!-- membuat table
-        format:
-            <table>
-                <tr>
-                    <td>kolom</td>
-                    <td>...</td>
-                    <td>kolom</td>
-                </tr>
-            </table> 
+    <h1>Membuat Tabel</h1>
 
-            tr ===> membuat baris ==> ke bawah
-            td ===> membuat kolom ===> ke samping kanan
-            th ===>membuat kolom dengan stle tebal dan rata tengah ===> judul kolom
+    <!-- 
+        membuat tabel ==>
+            format:
+                <table>
+                    <tr>
+                        <td>kolom1</td>
+                        <td>...</td>
+                        <td>kolomN</td>
+                    </tr>
+                </table>
+        
+        tr ==> membuat baris    ==> ke bawah 
+        td ==> membuat kolom    ==> ke samping kanan 
+        th ==> membuat kolom dengan style tebal dan rata tengah ==> judul kolom
 
-            attribute
-                - colspan ===> menggambung kolom ===> ke samping
-                - rowsspan ===> menggabungkan baris ===> ke bawah
-    -->
+        attribute 
+        - colspan   ==> menggabung kolom ==> ke samping
+        - rowspan   ==> menggabung baris ==> ke bawah
 
-    <h2>Tabel Pemain Sepak Bola</h2>
-    <table border="1" cellspacing="0" cellpadding="5">
-        <tr>
-            <th>No.</th>
-            <th>Nama</th>
-            <th>Alamat</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Egy Maulana Vikry</td>
-            <td>Medan</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Ramadhan Santa</td>
-            <td>Makasar</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Becham Putra Nugraha</td>
-            <td>Bandung</td>
-        </tr>
-    </table>
+     -->
 
-    <h2>Tabel Pemain Sepak Bola</h2>
-    <table border="1" cellspacing="0" cellpadding="5">
+     <h2>Tabel Pemain Sepak Bola</h2>
+
+     <table border="1" cellspacing="0" cellpadding="5" >
+        <!-- baris pertama -->
         <tr>
-            <th>No.</th>
-            <th>Nama</th>
-            <th>Alamat</th>
+            <th rowspan="2">No.</th>
+            <th colspan="2">Nama</th>
+            <th rowspan="2">Alamat</th>
         </tr>
+        
+        <!-- baris kedua -->
         <tr>
             <th>Depan</th>
             <th>Belakang</th>
         </tr>
+
         <tr>
             <td>1</td>
-            <td>Egy </td>th>
-            <th>Maulana Vikry</td>
+            <td>Egy</td>
+            <td>Maulana Vikry</td>
             <td>Medan</td>
         </tr>
         <tr>
             <td>2</td>
-            <td>Ramadhant Santa</td>
-            <td>Makasar</td>
+            <td>Ramadhan</td>
+            <td>Sananta</td>
+            <td>Makassar</td>
         </tr>
         <tr>
             <td>3</td>
-            <td>Becham Putra Nugraha</td>
+            <td>Beckham</td>
+            <td>Putra Nugraha</td>
             <td>Bandung</td>
         </tr>
-    </table>
+    
+     </table>
+
 </body>
 </html>
